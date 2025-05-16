@@ -24,8 +24,7 @@ This project analyzes Samsung's stock price data to identify patterns, predict f
 
 - `Samsung_stockprice.ipynb` – Jupyter notebook with full analysis and Prophet modeling
 - `Samsung Electronics Stock Historical Price.csv` – Historical daily stock prices
-- `KOSPI Data.csv` – Additional contextual stock data
-- `run_visualization.bat` – Batch file to run visualization on Windows
+- `KOSPI Data.csv` – Additional stock data to compare
 - `samsung_xgboost_model.pkl` – Serialized model file (optional advanced use)
 - `index.html` – Static webpage from the visualization output
 - `requirements.txt` – List of Python dependencies
