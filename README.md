@@ -102,14 +102,14 @@ The script generates:
 
 ## 🧑‍💼Contribution Breakdown
 
-Nguyễn Châu Anh: 12.13%
-Trần Duy Chiến: 12.44%
-Lê Trung Kiên: 12.41%
-Bùi Tuấn Lâm: 12.24%
-Hoàng Mai Linh: 11.5%
-Lương Thị Hồng Ngọc: 12.43%
-Lê Hồng Nhung: 14.57%
-Viên Đình Thông: 12.29%
+- Nguyễn Châu Anh: 12.13%
+- Trần Duy Chiến: 12.44%
+- Lê Trung Kiên: 12.41%
+- Bùi Tuấn Lâm: 12.24%
+- Hoàng Mai Linh: 11.5%
+- Lương Thị Hồng Ngọc: 12.43%
+- Lê Hồng Nhung: 14.57%
+- Viên Đình Thông: 12.29%
 
 ---
 
