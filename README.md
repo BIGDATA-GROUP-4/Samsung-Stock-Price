@@ -53,7 +53,7 @@ pip install -r requirements.txt
   - tensorflow
   - plotly
 
-### 3. Run the Dashboard (Optional):
+### 3. Run the Dashboard (Optional)
 
 ### 4. Data collection process
 Run the data preprocessing script to fetch the Samsung stock data.
