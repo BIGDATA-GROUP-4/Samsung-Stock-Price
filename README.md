@@ -78,3 +78,56 @@ The script generates:
 To modify the forecast horizon or model parameters, edit the following variables in the script:
 - `future_years`: Number of years to forecast (default: 5)
 - Model parameters in the Prophet initialization like `changepoint_prior_scale` and `seasonality_prior_scale`
+
+# Samsung Electronics Interactive Stock Price Visualization
+
+Interactive visualization of Samsung Electronics Close Price data with hover functionality and animation effects.
+
+## Features
+
+- **Interactive Plot**: Hover over any point to see the exact date and closing price
+- **Animated Line**: Watch the stock price trend develop over time with play/pause controls
+- **Date Range Selector**: Zoom in on specific time periods (1M, 6M, YTD, 1Y, All)
+- **Range Slider**: Drag to select custom date ranges
+- **Exportable**: Creates HTML files that can be embedded in Canva presentations
+
+## How to Run
+
+### Windows
+
+1. Double-click the `run_visualization.bat` file
+2. The script will install necessary packages and run the visualization
+3. Your default web browser will open with the interactive chart
+
+### Manual Setup
+
+1. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Run the visualization script:
+   ```
+   python samsung_interactive_visualization.py
+   ```
+
+3. Open the generated HTML file in your web browser:
+   - `samsung_interactive_chart_standalone.html`
+
+## Embedding in Canva
+
+To embed this visualization in a Canva presentation:
+
+1. Upload the HTML file to a web hosting service like GitHub Pages, Netlify, or any web hosting you have access to
+2. In Canva, add an 'Embed' element to your slide
+3. Paste the URL to your hosted HTML file
+4. Alternatively, use the 'Website' embed option in Canva and enter the URL
+
+## Files
+
+- `samsung_interactive_visualization.py` - Main Python script that generates the visualization
+- `Samsung Electronics Stock Historical Price.csv` - Data file
+- `samsung_interactive_chart.html` - Generated interactive chart (regular version)
+- `samsung_interactive_chart_standalone.html` - Generated interactive chart (standalone version)
+- `run_visualization.bat` - Windows batch file to run the visualization
+- `requirements.txt` - Required Python packages
