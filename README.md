@@ -125,14 +125,14 @@ pip install -r requirements.txt
 
 | Team Member         | Contribution (%) |
 | ------------------- | ---------------- |
-| Nguyễn Châu Anh     | 12.13%           |
-| Trần Duy Chiến      | 12.44%           |
-| Lê Trung Kiên       | 12.41%           |
-| Bùi Tuấn Lâm        | 12.24%           |
-| Hoàng Mai Linh      | 11.50%           |
-| Lương Thị Hồng Ngọc | 12.43%           |
-| Lê Hồng Nhung       | 14.57%           |
-| Viên Đình Thông     | 12.29%           |
+| Nguyễn Châu Anh     | 12.22%           |
+| Trần Duy Chiến      | 12.53%           |
+| Lê Trung Kiên       | 12.53%           |
+| Bùi Tuấn Lâm        | 12.33%           |
+| Hoàng Mai Linh      | 11.59%           |
+| Lương Thị Hồng Ngọc | 12.52%           |
+| Lê Hồng Nhung       | 13.90%           |
+| Viên Đình Thông     | 12.38%           |
 
 ---
 
