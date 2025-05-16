@@ -1,50 +1,94 @@
-![Auto Assign](https://github.com/BIGDATA-GROUP-4/demo-repository/actions/workflows/auto-assign.yml/badge.svg)
+# 📈 Samsung Stock Price Forecasting and Visualization
 
-![Proof HTML](https://github.com/BIGDATA-GROUP-4/demo-repository/actions/workflows/proof-html.yml/badge.svg)
+This repository provides tools to analyze, forecast, and visualize the historical stock prices of **Samsung Electronics** using time series models and interactive charts.
 
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+---
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+## 🧠 Project Features
 
-# Samsung Stock Price Forecasting with Prophet
 
-This repository contains a complete implementation of Facebook's Prophet model for forecasting Samsung Electronics stock prices.
+### 1. **Stock Forecasting**
+- Performs a comprehensive time series analysis on Samsung Electronics historical stock price data
+- Includes:
+  - Historical data analysis
+  - Trend and seasonality decomposition
+  - Technical Analysis
+  - Builds a XGBoost model with appropriate seasonality settings
+  - Forecasts stock prices for the next 5 years
+  - Cross-validation and performance metrics
+  - Identifies significant changepoints in the stock price history
 
-## Overview
+### 2. **Interactive Data Visualization**
+- Features:
+  - Interactive Plot: Hover over any point to see the exact date and closing price
+  - Animated Line: Watch the stock price trend develop over time with play/pause controls
+  - Date Range Selector: Zoom in on specific time periods (1M, 6M, YTD, 1Y, All)
+  - Range Slider: Drag to select custom date ranges
+  - Exportable: Creates HTML files that can be embedded in Canva presentations
+---
 
-The `samsung_prophet_model.py` script performs a comprehensive time series analysis on Samsung Electronics historical stock price data:
+## 📁 Repository Structure
 
-- Loads and analyzes historical stock data
-- Builds a Prophet model with appropriate seasonality settings
-- Forecasts stock prices for the next 5 years
-- Provides visualizations for trends, seasonality, and forecast components
-- Calculates accuracy metrics and performs cross-validation
-- Identifies significant changepoints in the stock price history
+- `Samsung_stockprice.ipynb` – Jupyter notebook with full analysis and Prophet modeling
+- `Samsung Electronics Stock Historical Price.csv` – Historical daily stock prices
+- `KOSPI Data.csv` – Additional contextual stock data
+- `samsung_interactive_visualization.py` – Script for Plotly interactive charts
+- `run_visualization.bat` – Batch file to run visualization on Windows
+- `samsung_xgboost_model.pkl` – Serialized model file (optional advanced use)
+- `index.html` – Static webpage from the visualization output
+- `requirements.txt` – List of Python dependencies
 
-## Requirements
+---
 
-Install the required packages:
+## 🚀 Getting Started
+
+### Setup Environment
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Data
-
-The script expects a CSV file named `Samsung Electronics Stock Historical Price.csv` in the same directory, with at least the following columns:
-- `Date`: The trading date
-- `Close`: The closing price for each trading day
-
-## Usage
-
-Run the script with:
+### Run Forecasting (Prophet)
 
 ```bash
-python samsung_prophet_model.py
+python samsung_xgboost_model.py
 ```
 
-## Output
+### Run Visualization (Interactive)
+
+#### Windows
+
+1. Double-click the `run_visualization.bat` file
+2. The script will install necessary packages and run the visualization
+3. Your default web browser will open with the interactive chart
+
+#### Manual Setup
+
+1. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Run the visualization script:
+   ```
+   python samsung_interactive_visualization.py
+   ```
+
+3. Open the generated HTML file in your web browser:
+   - `samsung_interactive_chart_standalone.html`
+
+#### Embedding in Canva
+
+To embed this visualization in a Canva presentation:
+
+1. Upload the HTML file to a web hosting service like GitHub Pages, Netlify, or any web hosting you have access to
+2. In Canva, add an 'Embed' element to your slide
+3. Paste the URL to your hosted HTML file
+4. Alternatively, use the 'Website' embed option in Canva and enter the URL
+
+---
+
+## 📊 Outputs
 
 The script generates:
 
@@ -64,70 +108,46 @@ The script generates:
    - Forecast for the next 30 days
    - Model performance metrics (MAPE and RMSE)
    - Cross-validation results
+---
 
-## Interpreting Results
-
-- **Trend**: The overall trend of Samsung stock prices
-- **Weekly Seasonality**: How prices vary by day of the week
-- **Yearly Seasonality**: Annual patterns in the stock price
-- **Changepoints**: Significant shifts in the trend
-- **Forecast Uncertainty**: Upper and lower bounds for predictions
-
-## Customization
+## 🔧 Customization
 
 To modify the forecast horizon or model parameters, edit the following variables in the script:
 - `future_years`: Number of years to forecast (default: 5)
 - Model parameters in the Prophet initialization like `changepoint_prior_scale` and `seasonality_prior_scale`
 
-# Samsung Electronics Interactive Stock Price Visualization
+---
 
-Interactive visualization of Samsung Electronics Close Price data with hover functionality and animation effects.
+## 👥 Contributors
 
-## Features
+- [@BIGDATA-GROUP-4](https://github.com/BIGDATA-GROUP-4) – Team Collaboration
+<a href="https://github.com/immaFrogUwU">
+  <img src="https://avatars.githubusercontent.com/u/130581573?v=4" width="50" height="50" alt="immaFrogUwU"/>
+</a>
+<a href="https://github.com/chientd29">
+  <img src="https://avatars.githubusercontent.com/u/137612901?v=4" width="50" height="50" alt="chientd29"/>
+</a>
+<a href="https://github.com/lamyeucoding">
+  <img src="https://avatars.githubusercontent.com/u/203073838?v=4" width="50" height="50" alt="lamyeucoding"/>
+</a>
+<a href="https://github.com/bbbunny03">
+  <img src="https://avatars.githubusercontent.com/u/207357130?v=4" width="50" height="50" alt="bbbunny03"/>
+</a>
+<a href="https://github.com/chauanh14">
+  <img src="https://avatars.githubusercontent.com/u/207451086?v=4" width="50" height="50" alt="chauanh14"/>
+</a>
+<a href="https://github.com/troc02244">
+  <img src="https://avatars.githubusercontent.com/u/192955263?v=4" width="50" height="50" alt="troc02244"/>
+</a>
+<a href="https://github.com/letrungkien2004">
+  <img src="https://avatars.githubusercontent.com/u/207433917?v=4" width="50" height="50" alt="letrungkien2004"/>
+</a>
+<a href="https://github.com/theycallmevong">
+  <img src="https://avatars.githubusercontent.com/u/207429199?v=4" width="50" height="50" alt="theycallmevong"/>
+</a>
 
-- **Interactive Plot**: Hover over any point to see the exact date and closing price
-- **Animated Line**: Watch the stock price trend develop over time with play/pause controls
-- **Date Range Selector**: Zoom in on specific time periods (1M, 6M, YTD, 1Y, All)
-- **Range Slider**: Drag to select custom date ranges
-- **Exportable**: Creates HTML files that can be embedded in Canva presentations
+---
 
-## How to Run
+## 📄 License
 
-### Windows
-
-1. Double-click the `run_visualization.bat` file
-2. The script will install necessary packages and run the visualization
-3. Your default web browser will open with the interactive chart
-
-### Manual Setup
-
-1. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-
-2. Run the visualization script:
-   ```
-   python samsung_interactive_visualization.py
-   ```
-
-3. Open the generated HTML file in your web browser:
-   - `samsung_interactive_chart_standalone.html`
-
-## Embedding in Canva
-
-To embed this visualization in a Canva presentation:
-
-1. Upload the HTML file to a web hosting service like GitHub Pages, Netlify, or any web hosting you have access to
-2. In Canva, add an 'Embed' element to your slide
-3. Paste the URL to your hosted HTML file
-4. Alternatively, use the 'Website' embed option in Canva and enter the URL
-
-## Files
-
-- `samsung_interactive_visualization.py` - Main Python script that generates the visualization
-- `Samsung Electronics Stock Historical Price.csv` - Data file
-- `samsung_interactive_chart.html` - Generated interactive chart (regular version)
-- `samsung_interactive_chart_standalone.html` - Generated interactive chart (standalone version)
-- `run_visualization.bat` - Windows batch file to run the visualization
-- `requirements.txt` - Required Python packages
+This project is licensed under the **MIT License**.
