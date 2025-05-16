@@ -7,6 +7,14 @@ This project analyzes Samsung's stock price data to identify patterns, predict f
 
 ## 🧠 Project Features
 
+### **🔧 Key Features**
+- Preprocessing of stock data using PySpark
+- Exploratory Data Analysis with Pandas, Seaborn, and Plotly
+- Missing data analysis 
+- Time Series Decomposition
+- Forecasting using XGBoost
+- Evaluation using MAE, RMSE, and R²
+
 ### **Stock Analysis**
 - Performs a comprehensive analysis on Samsung Electronics' historical stock price data
 - Includes:
@@ -40,7 +48,11 @@ cd Samsung-Stock-Price
 ```
 
 ### 2. Install Prerequisites:
-- Ensure you have Python 3.8+ installed. Then install the required packages:
+- Ensure you have the following installed:
+  - Apache Spark
+  - JavaHome (required for PySpark)
+  - pip (Python package manager)
+  - Python 3.8+ installed. Then install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
@@ -52,23 +64,31 @@ pip install -r requirements.txt
   - scikit-learn
   - tensorflow
   - plotly
+  - mplfinance
+  - statsmodels
+  - xgboost 
 
-### 3. Run the Dashboard (Optional)
+### 3. Run the Notebook & Dashboard
+- Open Samsung_stockprice.ipynb
+- Run cells sequentially
+- Make sure the dataset file Samsung Electronics Stock Historical Price.csv is placed in the same directory as the notebook or adjust the file path accordingly.
 
-### 4. Data collection process
-Run the data preprocessing script to fetch the Samsung stock data.
+## 📊 What is Included in the Analysis
+- Data Preprocessing:
+  - Schema inspection
+  - Type conversion and date parsing
+  - Handling missing values
 
-### 5. Analysis execution
-Execute the analysis scripts.
+- Exploratory Data Analysis:
+  - Visualizations of stock trends
+  - Volume and price relationship
+  - Seasonal decomposition
 
-## 📊 Outputs
-
-The script generates: 
-   - Data summary statistics
-   - Data visualizations
-   - Forecast for the next 30 days
+- Forecasting: 
+   - Forecast for the next 90 days
    - Model performance metrics
-   - Cross-validation results
+   - Predicting future stock prices using XGBoost
+   - Visual comparison of predictions vs actual
 
 ---
 
@@ -102,14 +122,16 @@ The script generates:
 
 ## 🧑‍💼Contribution Breakdown
 
-- Nguyễn Châu Anh: 12.13%
-- Trần Duy Chiến: 12.44%
-- Lê Trung Kiên: 12.41%
-- Bùi Tuấn Lâm: 12.24%
-- Hoàng Mai Linh: 11.5%
-- Lương Thị Hồng Ngọc: 12.43%
-- Lê Hồng Nhung: 14.57%
-- Viên Đình Thông: 12.29%
+| Team Member         | Contribution (%) |
+| ------------------- | ---------------- |
+| Nguyễn Châu Anh     | 12.13%           |
+| Trần Duy Chiến      | 12.44%           |
+| Lê Trung Kiên       | 12.41%           |
+| Bùi Tuấn Lâm        | 12.24%           |
+| Hoàng Mai Linh      | 11.50%           |
+| Lương Thị Hồng Ngọc | 12.43%           |
+| Lê Hồng Nhung       | 14.57%           |
+| Viên Đình Thông     | 12.29%           |
 
 ---
 
