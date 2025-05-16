@@ -1,12 +1,13 @@
-# 📈 Samsung Stock Price Forecasting and Visualization
+# 📈 Samsung Stock Price Analysis
 
-This repository provides tools to analyze, forecast, and visualize the historical stock prices of **Samsung Electronics** using time series models and interactive charts.
+## **Project Summary**
+This project analyzes Samsung's stock price data to identify patterns, predict future trends, and provide insights for investment decisions. The system collects historical stock data, applies various statistical and machine learning models for analysis, and visualizes the results through interactive dashboards. Key features include price trend analysis, volatility assessment, correlation with market indices, and predictive modeling for short-term price movements.
 
 ---
 
 ## 🧠 Project Features
 
-### 1. **Stock Forecasting**
+### **Stock Forecasting**
 - Performs a comprehensive time series analysis on Samsung Electronics' historical stock price data
 - Includes:
   - Historical data analysis
@@ -16,14 +17,7 @@ This repository provides tools to analyze, forecast, and visualize the historica
   - Forecasts stock prices for the next 5 years
   - Cross-validation and performance metrics
   - Identifies significant change points in the stock price history
-
-### 2. **Interactive Data Visualization**
-- Features:
-  - Interactive Plot: Hover over any point to see the exact date and closing price
-  - Animated Line: Watch the stock price trend develop over time with play/pause controls
-  - Date Range Selector: Zoom in on specific periods (1M, 6M, YTD, 1Y, All)
-  - Range Slider: Drag to select custom date ranges
-  - Exportable: Creates HTML files that can be embedded in Canva presentations
+  
 ---
 
 ## 📁 Repository Structure
@@ -38,43 +32,45 @@ This repository provides tools to analyze, forecast, and visualize the historica
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Instructions to Run the Code
 
-### Setup Environment
+### 1. Clone the Repository:
+```
+git clone https://github.com/BIGDATA-GROUP-4/Samsung-Stock-Price.git
+cd Samsung-Stock-Price
+```
 
+### 2. Install Prerequisites:
+- Ensure you have Python 3.8+ installed. Then install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
+- The main dependencies include:
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - tensorflow
+  - plotly
 
-### Run Forecasting (Prophet)
+### 3. Run the Dashboard (Optional):
 
-```bash
-python samsung_xgboost_model.py
-```
+### 4. Data collection process
+Run the data preprocessing script to fetch the Samsung stock data.
 
-### Run Visualization (Interactive)
-
-#### Windows
-
-1. Double-click the `run_visualization.bat` file
-2. The script will install the necessary packages and run the visualization
-3. Your default web browser will open with the interactive chart
-
-#### Manual Setup
-
-Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
----
+### 5. Analysis execution
+Execute the analysis scripts.
 
 ## 📊 Outputs
 
 The script generates: 
    - Data summary statistics
+   - Data visualizations
    - Forecast for the next 30 days
-   - Model performance metrics (MAPE and RMSE)
+   - Model performance metrics
    - Cross-validation results
+
 ---
 
 ## 👥 Contributors
@@ -105,8 +101,19 @@ The script generates:
   <img src="https://avatars.githubusercontent.com/u/207429199?v=4" width="50" height="50" alt="theycallmevong"/>
 </a>
 
+## 🧑‍💼Contribution Breakdown
+
+Nguyễn Châu Anh: 12.13%
+Trần Duy Chiến: 12.44%
+Lê Trung Kiên: 12.41%
+Bùi Tuấn Lâm: 12.24%
+Hoàng Mai Linh: 11.5%
+Lương Thị Hồng Ngọc: 12.43%
+Lê Hồng Nhung: 14.57%
+Viên Đình Thông: 12.29%
+
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the MIT License - see the LICENSE file for details.
