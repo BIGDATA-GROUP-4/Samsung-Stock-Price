@@ -1,4 +1,5 @@
 # 📈 Samsung Stock Price Analysis
+![Uploading image.png…]()
 
 ## **Project Summary**
 This project analyzes Samsung's stock price data to identify patterns, predict future trends, and provide insights for investment decisions. The system collects historical stock data, applies various statistical and machine learning models for analysis, and visualizes the results through interactive dashboards. Key features include price trend analysis, volatility assessment, correlation with market indices, and predictive modeling for short-term price movements.
