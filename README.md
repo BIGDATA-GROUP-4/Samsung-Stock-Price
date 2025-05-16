@@ -7,8 +7,8 @@ This project analyzes Samsung's stock price data to identify patterns, predict f
 
 ## 🧠 Project Features
 
-### **Stock Forecasting**
-- Performs a comprehensive time series analysis on Samsung Electronics' historical stock price data
+### **Stock Analysis**
+- Performs a comprehensive analysis on Samsung Electronics' historical stock price data
 - Includes:
   - Historical data analysis
   - Trend and seasonality decomposition
